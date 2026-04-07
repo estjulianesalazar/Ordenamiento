@@ -1,4 +1,4 @@
-/*
+/*25
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
@@ -7,11 +7,17 @@ package com.mycompany.ordenamiento;
 /**
  *
  * @author legon
- */
+ */import java.util.Scanner;
+
 public class Ordenamiento {
 
     public static void main(String[] args) {
-        int arr[] = {5, 2, 11, -8, 115, 56, -3};
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Ingrese el Tamano Del Arreglo");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        
         ordenar(arr);
         System.out.println(java.util.Arrays.toString(arr));
         

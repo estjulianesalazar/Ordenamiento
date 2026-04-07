@@ -7,20 +7,23 @@ package com.mycompany.ordenamiento;
 /**
  *
  * @author legon
- */import java.util.Scanner;
+ */
+import java.util.Scanner;
+import java.util.Random;
 
 public class Ordenamiento {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
         
         System.out.print("Ingrese el Tamano Del Arreglo");
         int n = sc.nextInt();
         int arr[] = new int[n];
         
         for  (int i = 0;i < n; i++){
-            System.out.print("Ingrese el dato " + (i + 1) + ": ");
-            arr[i] = sc.nextInt();
+            
+            arr[i] = rand.nextInt(100) - 50;
         }
         
         ordenar(arr);
